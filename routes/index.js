@@ -1,9 +1,10 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-// Do work here
+// so requset id the information and
+// response is the methods for sending the data back
 router.get('/', (req, res) => {
-  res.send('Hey! It works!');
-});
+  res.send('Hey! It works!')
+})
 
-module.exports = router;
+module.exports = router
