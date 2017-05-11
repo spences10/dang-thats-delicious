@@ -1,10 +1,9 @@
 const express = require('express')
 const router = express.Router()
+const storeController = require('../controllers/storeController')
 
-// so requset id the information and
+// so requset is the information and
 // response is the methods for sending the data back
-router.get('/', (req, res) => {
-  res.send('Hey! It works!')
-})
+router.get('/', storeController.homePage)
 
 module.exports = router
