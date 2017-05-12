@@ -1,0 +1,11 @@
+extends layout
+
+//- import mixins
+//- use the + sign to use
+include mixins/_storeForm
+
+block content
+  .inner
+    h2= title
+    +storeForm()
+
