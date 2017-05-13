@@ -21,7 +21,7 @@ storeSchema.pre('save', function (next) {
     next() // skip
     return // stop the function, can also do `return next()` 
   }
-  this.slug = slug(this.slug)
+  this.slug = slug(this.name)
   next()
   // TODO make mor resiliant for unique slugs
 })
