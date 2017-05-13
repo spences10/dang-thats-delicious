@@ -5,7 +5,8 @@ const { catchErrors } = require('../handlers/errorHandlers')
 
 // so requset is the information and
 // response is the methods for sending the data back
-router.get('/', storeController.homePage)
+router.get('/', catchErrors(storeController.getStores))
+router.get('/stores', catchErrors(storeController.getStores))
 router.get('/add', storeController.addStore)
 router.post('/add', catchErrors(storeController.createStore))
 
