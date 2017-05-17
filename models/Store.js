@@ -37,7 +37,7 @@ const storeSchema = new mongoose.Schema({
 storeSchema.pre('save', function (next) {
   if (!this.isModified('name')) {
     next() // skip
-    return // stop the function, can also do `return next()` 
+    return // stop the function, can also do `return next()`
   }
   this.slug = slug(this.name)
   next()
