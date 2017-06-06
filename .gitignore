@@ -17,3 +17,6 @@ node_modules
 # dist
 /public/dist
 
+# dist
+/public/dist/uploads
+
