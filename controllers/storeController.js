@@ -77,3 +77,9 @@ exports.updateStore = async (req, res) => {
   // redirect to store with success msg
 }
 
+exports.getStoreBySlug = async (req, res, next) => {
+  // query database for store
+  const store = await Store.findOne({ slug: req.params.slug })
+  if(!store) return next()
+  res.render('store', { store, title: store.name })
+}
