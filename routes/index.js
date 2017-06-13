@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const storeController = require('../controllers/storeController')
 const userController = require('../controllers/userController')
+const authController = require('../controllers/authController')
 const { catchErrors } = require('../handlers/errorHandlers')
 
 // so requset is the information and
@@ -34,6 +35,10 @@ router.get('/register', userController.registerForm)
 // 1. validate data
 // 2. register user
 // 3. log user in 
-router.post('/register', userController.validateRegister)
+router.post('/register', 
+  userController.validateRegister,
+  userController.register,
+  authController.login
+)
 
 module.exports = router
