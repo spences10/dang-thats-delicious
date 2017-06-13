@@ -9,7 +9,7 @@ const { catchErrors } = require('../handlers/errorHandlers')
 // response is the methods for sending the data back
 router.get('/', catchErrors(storeController.getStores))
 router.get('/stores', catchErrors(storeController.getStores))
-router.get('/add', storeController.addStore)
+router.get('/add', authController.isLoggedIn, storeController.addStore)
 
 router.post('/add', 
   storeController.upload,
@@ -30,6 +30,7 @@ router.get('/tags', catchErrors(storeController.getStoreByTag))
 router.get('/tags/:tag', catchErrors(storeController.getStoreByTag))
 
 router.get('/login', userController.loginForm)
+router.post('/login', authController.login)
 router.get('/register', userController.registerForm)
 
 // 1. validate data
@@ -40,5 +41,7 @@ router.post('/register',
   userController.register,
   authController.login
 )
+
+router.get('/logout', authController.logout)
 
 module.exports = router
