@@ -46,6 +46,9 @@ storeSchema.index({
   description: 'text'
 })
 
+// geospatial data
+storeSchema.index({ location: '2dsphere' })
+
 storeSchema.pre('save', async function (next) {
   if (!this.isModified('name')) {
     next() // skip
