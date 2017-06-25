@@ -2,7 +2,7 @@ mixin storeCard(store = {})
   .store
     .store__hero
       .store__actions
-        is user
+        if user
           .store__action.store__action--heart
             form.heart(method="POST" action=`/api/stores/${store._id}/heart`)
               - const heartStrings = user.hearts.map(obj => obj.toString())
