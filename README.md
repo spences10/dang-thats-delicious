@@ -1,6 +1,14 @@
-## What is this?
+# Now That's Delicious! 😋
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/spences10/dang-thats-delicious.svg)](https://greenkeeper.io/)
+
+End project of my follow along with @WesBos and the Learn Node course
+
+## What I learned
+
+How to build an application using Node.js, Express and MongoDB
+
+## What is this?
 
 Just you wait folks!
 
