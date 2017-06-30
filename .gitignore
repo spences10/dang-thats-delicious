@@ -15,9 +15,5 @@ node_modules
 *.env
 *.env.now
 
-# dist
-/public/dist
 
-# dist
-/public/dist/uploads
 
