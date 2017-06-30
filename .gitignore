@@ -13,6 +13,7 @@ Thumbs.db
 node_modules
 
 *.env
+*.env.now
 
 # dist
 /public/dist
