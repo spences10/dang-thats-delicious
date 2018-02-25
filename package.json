@@ -65,7 +65,7 @@
     "nodemon": "^1.11.0",
     "postcss-loader": "^2.0.5",
     "sass-loader": "^6.0.3",
-    "webpack": "^3.0.0"
+    "webpack": "^4.0.0"
   },
   "snyk": true
 }
