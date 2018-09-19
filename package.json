@@ -62,6 +62,6 @@
     "nodemon": "1.18.4",
     "postcss-loader": "3.0.0",
     "sass-loader": "7.1.0",
-    "webpack": "4.19.0"
+    "webpack": "4.19.1"
   }
 }
