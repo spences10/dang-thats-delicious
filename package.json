@@ -28,7 +28,7 @@
     "dotenv": "8.1.0",
     "es6-promisify": "6.0.2",
     "express": "4.17.1",
-    "express-session": "1.16.2",
+    "express-session": "1.17.0",
     "express-validator": "6.2.0",
     "faker": "4.1.0",
     "forever": "1.0.0",
