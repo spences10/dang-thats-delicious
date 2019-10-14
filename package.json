@@ -51,7 +51,7 @@
     "validator": "11.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "9.6.4",
+    "autoprefixer": "9.6.5",
     "babel-core": "6.26.3",
     "babel-loader": "8.0.6",
     "babel-preset-es2015": "6.24.1",
