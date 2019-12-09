@@ -55,7 +55,7 @@
     "babel-core": "6.26.3",
     "babel-loader": "8.0.6",
     "babel-preset-es2015": "6.24.1",
-    "concurrently": "5.0.0",
+    "concurrently": "5.0.1",
     "css-loader": "3.2.1",
     "extract-text-webpack-plugin": "3.0.2",
     "node-sass": "4.13.0",
