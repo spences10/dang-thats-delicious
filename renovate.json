@@ -1,9 +1,25 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base"],
+  "reviewers": ["spences10"],
+  "bumpVersion": null,
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "packagePatterns": ["^eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "packagePatterns": ["prettier"],
+      "groupName": "prettier"
+    }
   ],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": "schedule:monthly"
-  }
+  "labels": ["renovate"],
+  "prHourlyLimit": 1,
+  "prConcurrentLimit": 5,
+  "rangeStrategy": "bump",
+  "semanticCommits": true,
+  "schedule": "before 5am on Monday"
 }
